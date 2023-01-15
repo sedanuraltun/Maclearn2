@@ -19,7 +19,7 @@ def predict():
     output='{0:.{1}f}'.format(prediction[0][1], 2)
 
 
-    return render_template('index.html',pred='Your probability of diabetes is % {}'.format(str(float(output)*100)))
+    return render_template('index.html',pred='Your probability of lung cancer is % {}'.format(str(float(output)*100)))
 
 if __name__ == "__main__":
     app.run(debug=True)
