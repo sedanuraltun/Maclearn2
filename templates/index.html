@@ -9,22 +9,23 @@
 
     <div>
     <h1>Akciğer Kanseri Tahmini</h1>
+        <h3>Girilen tüm değerler sayısal olmalıdır. Cinsiyet kadın için 1 erkek için 2 giriniz.</h3>
     <form action="{{ url_for('predict')}}"method="post">
-        Smoking: <input type="text" name="Pregnancies" id="Pregnancies" placeholder="Smoking">
+        Smoking: <input type="text" name="Pregnancies" id="Pregnancies" placeholder="Günde içilen sigara sayısı">
         <br> <br>
-        Age: <input type="text" name="Glucose" id="Glucose" placeholder="Age">
+        Air Pollution: <input type="text" name="Glucose" id="Glucose" placeholder="Hava kirliliği yüzdesi">
         <br> <br>
-        Gender: <input type="text" name="Blood" id="Blood" placeholder="Gender">
+        Genetic Risk: <input type="text" name="Blood" id="Blood" placeholder="genetik risk yüzdesi">
         <br> <br>
-        Air Pollution: <input type="text" name="Skin" id="Skin" placeholder="Air Pollution">
+        Age: <input type="text" name="Skin" id="Skin" placeholder="Yaşınız">
         <br> <br>
-        Alcohol use: <input type="text" name="Insulin" id="Insulin" placeholder="Alcohol use">
+        Alcohol use: <input type="text" name="Insulin" id="Insulin" placeholder="Aylık ml.">
         <br> <br>
         Obesity: <input type="text" name="bmi" id="bmi" placeholder="Obesity">
         <br> <br>
-        Dust Allergy: <input type="text" name="PedigreeFunction" id="PedigreeFunction" placeholder="Dust Allergy">
+        Dust Allergy: <input type="text" name="PedigreeFunction" id="PedigreeFunction" placeholder="Toz alerjisi yüzde">
         <br> <br>
-        Genetic Risk: <input type="text" name="age" id="age" placeholder="Genetic Risk">
+        Gender: <input type="text" name="age" id="age" placeholder="Kadın için 1 Erkek için 2 girin">
         <br> <br>
         <button type="submit">Predict</button>
 
